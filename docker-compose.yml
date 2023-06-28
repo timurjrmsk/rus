@@ -1,0 +1,12 @@
+version: '3'
+services:
+  app:
+    image: cr.yandex/crpmg9qeitngo9ui36lc/sukharev_integration_module
+    restart: always
+    volumes:
+      - /shares/olga/ProbeRec/Tables:/app/Tables
+#      - /home/spinoza/gym/work/Server_Suhareva/Tables:/app/Tables
+    ports:
+      - "8080:8080"
+    stdin_open: true
+    tty: true
